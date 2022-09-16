@@ -1,4 +1,5 @@
 import React from "react";
+import productimage from "./mug-white-4.jpeg";
 import { IoIosCloseCircleOutline } from "react-icons/io";
 function CartRow() {
   return (
@@ -6,7 +7,7 @@ function CartRow() {
       <div className="justify-self-center">
         <IoIosCloseCircleOutline className="text-4xl text-gray-200" />
       </div>
-      <img src="/src/mug-white-4.jpeg" className="w-40 p-1" />
+      <img src={productimage} className="w-40 p-1" />
       <h2 className="col-span-4 pl-10 text-2xl font-bold text-orange-600 ">
         Product Name
       </h2>
