@@ -11,9 +11,9 @@ function Details({ onAddToCart }) {
   const [loading, setLoading] = useState(true);
   const [count, setCount] = useState(1);
   const id = +useParams().id;
-  console.log(id);
+ const [product, setproduct] = useState();
 
-  const [product, setproduct] = useState();
+ 
   useEffect(
     function() {
       const p = getdata(id);
